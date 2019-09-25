@@ -8,4 +8,5 @@
 
 
 ## Meet The Team
-Andikan Affiah @thelm
+Andikan Affiah - @thelm
+Paschal ERHURUN - @Paschal

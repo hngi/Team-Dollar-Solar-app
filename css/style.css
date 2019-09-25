@@ -1,0 +1,28 @@
+body {
+    background-image: url("../img/Frame%202.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Helvetica;
+}
+
+#solicalc {
+    max-width:  400px;
+    margin: 200px auto;
+    text-align: center;
+/*    background-color: grey;*/
+}
+
+h1 {
+    font-size: 50px;
+    color: #FEBB09;
+    font-style: oblique;
+}
+
+input[type=text] {
+    height: 25px;
+}
+
+button {
+    height: 25px;
+}
+

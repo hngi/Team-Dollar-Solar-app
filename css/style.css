@@ -1,3 +1,4 @@
+
 body {
     background-image: url("../img/Frame%202.png");
     background-repeat: no-repeat;
@@ -5,11 +6,11 @@ body {
     font-family: Helvetica;
 }
 
-#solicalc {
-    max-width:  400px;
-    margin: 200px auto;
-    text-align: center;
-/*    background-color: grey;*/
+#app{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 h1 {
@@ -17,12 +18,64 @@ h1 {
     color: #FEBB09;
     font-style: oblique;
 }
+.form{
+	width: 300px;
+	max-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+	background-color: #edcabd;
+	border-radius: 10px;
+}
+#display{
+	background-color: #edbacd;
+}
+
+.name-input{
+	width: inherit;
+}
+
+.name-input input{
+	width: 295px;
+	margin-bottom: 10px;
+}
+
+.quantity-watt{
+	width: inherit;
+	display: flex;
+	justify-content: space-between;
+}
+
+.quantity-watt input:first-of-type{
+	width: 50px;
+}
+
+.quantity-watt input:last-of-type{
+	width: 150px;
+}
 
 input[type=text] {
-    height: 25px;
+    height: 30px;
 }
 
 button {
-    height: 25px;
+    height: 35px;
 }
+
+.bg-tone-blue{
+	background-color: #0099ff;
+}
+
+#calculate {
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+#calculateButton{
+	height: 35px;
+	width: 100px;
+}
+
 

@@ -68,7 +68,7 @@ ini_set('display_startup_errors', TRUE);
                     //$consumption = $_post['watt'] * $_POST['days'] * $_POST['hours']
                     $consumption = ($_POST['watt'] * 365 * $_POST['average_rate']) / 1000;
                     $appliance_consumption = 17.78 * $consumption;
-                    echo $_POST['name'] . " is using N" . $appliance_consumption . " per hours "
+                    echo $_POST['name'] . " is using N" . $appliance_consumption . " per year, ". $appliance_consumption / 12 ." per month";
                     
             ?>
                     <form method="POST">

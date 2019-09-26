@@ -16,7 +16,8 @@ body {
 h1 {
     font-size: 50px;
     color: #FEBB09;
-    font-style: oblique;
+	font-style: oblique;
+	text-align: center;
 }
 .form{
 	width: 300px;

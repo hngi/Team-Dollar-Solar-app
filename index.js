@@ -9,19 +9,24 @@ addButton.addEventListener('click', () => {
 	const quantity = document.querySelector('.quantity-watt input:first-of-type');
 	const watt = document.querySelector('.quantity-watt input:last-of-type');
 
-	electronics.push([name.value, quantity.value, watt.value]);
+        if(name.value != "" && quantity.value != "" && watt.value != ""){
+	    electronics.push([name.value, quantity.value, watt.value]);
+            selectDisplay.innerHTML = "";
+	    name.innerHTML = "";
+	    quantity.innerHTML = "";
+	    watt.innerHTML = "";
 
-	selectDisplay.innerHTML = "";
-	name.innerHTML = "";
-	quantity.innerHTML = "";
-	watt.innerHTML = "";
-
-	electronics.forEach(item => {
+	    electronics.forEach(item => {
 		let span = document.createElement('span');
 		span.innerHTML = item[0] + " " + "(" + item[1] + ")";
 		span.classList.add('bg-tone-blue');
 		selectDisplay.appendChild(span);
-	});
+	    });
+        }else{ 
+            alert("fields must not be empty");
+        }
+
+	
    
 	
 });

@@ -24,4 +24,5 @@ addButton.addEventListener('click', () => {
 
 calculateButton.addEventListener('click', () => {
     fetch()
+    alert("<?php echo "Hello"; ?>")
 });

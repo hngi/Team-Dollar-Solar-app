@@ -36,8 +36,8 @@ ini_set('display_startup_errors', TRUE);
 					<div class="quantity-watt">
 						<input type="number" name="quantity" size="30" placeholder="Quantity" required/>
                         <input type="number" name="watt" placeholder="Power Consumption in Watts" required/><br>
-                        <input type = 'number' name = 'average_rate' width = '5' placeholder = "Rate (Hrs)" required />
-                        <input type = 'number' name = 'average_days' width = '5' placeholder = "Days (365 used)" required />
+                        <!--input type = 'number' name = 'average_rate' width = '5' placeholder = "Rate (Hrs)" required />
+                        <input type = 'number' name = 'average_days' width = '5' placeholder = "Days (365 used)" required /-->
 						<button id="addButton">Add</button>
 					</div>
 
@@ -66,9 +66,10 @@ ini_set('display_startup_errors', TRUE);
 
                     //let one kilowatt cost N100 
                     //$consumption = $_post['watt'] * $_POST['days'] * $_POST['hours']
-                    $consumption = ($_POST['watt'] * 365 * $_POST['average_rate']) / 1000;
-                    $appliance_consumption = 17.78 * $consumption;
-                    echo $_POST['name'] . " is using N" . $appliance_consumption . " per year, ". $appliance_consumption / 12 ." per month";
+                    //$consumption = ($_POST['watt'] * 365 * $_POST['average_rate']) / 1000;
+                    //$appliance_consumption = 17.78 * $consumption;
+					//echo $_POST['name'] . " is using N" . $appliance_consumption . " per year, ". $appliance_consumption / 12 ." per month";
+					echo $_POST['name'] . "(s) is using N" . $_POST['quantity'] * $_POST['watt']; // . " per , ". $appliance_consumption / 12 ." per month";
                     
             ?>
                     <form method="POST">
@@ -83,7 +84,7 @@ ini_set('display_startup_errors', TRUE);
 					<div class="quantity-watt">
 						<input type="number" name="quantity" size="30" placeholder="Quantity" required/>
                         <input type="number" name="watt" placeholder="Power Consumption in Watts" required/><br>
-                        <input type = 'number' name = 'average_rate' placeholder = "Ave. Hours of Usage" required />
+                        <!--input type = 'number' name = 'average_rate' placeholder = "Ave. Hours of Usage" required /-->
 						<button id="addButton">Add</button>
 					</div>
 

@@ -5,28 +5,54 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Solar Power Estimator</title>
 </head>
 
 <body>
-	<div id="app">
 
+
+	<div class="display2 hidden">
+		<div class="calculate-display">
+			<div class="calculate-display-modal">
+				<h2>Total <br> Power required</h2>
+				<hr>
+				<div class="display-modal">
+					<div class="m-auto">
+						<div class="mt-10"><span class="bold">1 day: </span> <span class="val">20 kWh</span></div>
+						<hr>
+						<div class="mt-10"><span class="bold">7 days: </span> <span class="val1">20 kWh</span></div>
+						<hr>
+						<div class="mt-10"><span class="bold">30 days: </span> <span class="val2">20 kWh</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="app">
+		<div class="show-display">
+			<div id="item-display">
+				<span class="tooltiptext hidden">Check here</span>
+				<span>0</span>
+				<div id="display" class="hidden"></div>
+			</div>
+		</div>
 		<div>
 			<h1>Soli Calc</h1>
 
 
 			<div class="form">
-				<div id="display">
-				
-				</div>
+
 
 				<div class="name-input">
-					<input type="text" name="name" placeholder="Name of Electronic" required/>
+					<input type="text" name="name" placeholder="Name of Electronic" required>
 				</div>
 				<div class="quantity-watt">
-					<input type="number" name="quantity" size="30" placeholder="Quantity" required/>
-					<input type="number" name="watt" placeholder="Power Consumption in Watts" required/>
+					<input type="number" name="quantity" size="30" placeholder="Quantity" required>
+					<input type="number" name="watt" size="30" placeholder="Watts" required>
+					<!-- <input type="hidden" name="days" placeholder="Days" size="4" required> -->
 					<button id="addButton">Add</button>
 				</div>
 

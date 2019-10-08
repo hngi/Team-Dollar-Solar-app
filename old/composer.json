@@ -1,0 +1,11 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.9.0",
+        "tecnickcom/tcpdf": "^6.3",
+        "mpdf/mpdf": "^8.0",
+        "dompdf/dompdf": "^0.8.3",
+        "phenx/php-font-lib": "^0.5.1",
+        "phenx/php-svg-lib": "^0.3.3",
+        "phpoffice/phpexcel": "^1.8"
+    }
+}

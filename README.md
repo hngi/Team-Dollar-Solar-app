@@ -10,3 +10,4 @@
 ## Meet The Team
 Andikan Affiah - @thelm
 Paschal ERHURUN - @Paschal
+NJOKU OKECHUKWU VALENTINE @bonsoirval
